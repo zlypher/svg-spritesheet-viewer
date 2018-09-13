@@ -9,7 +9,7 @@ interface ISpritesheetViewerState {
 }
 
 export class SpritesheetViewer extends React.Component<ISpritesheetViewerProps, ISpritesheetViewerState> {
-    constructor(props) {
+    constructor(props: ISpritesheetViewerProps) {
         super(props);
     }
 
