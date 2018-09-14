@@ -2,14 +2,14 @@
   "name": "svg-spritesheet-viewer",
   "version": "1.0.0",
   "description": "SVG Spritesheet Viewer Component for React",
-  "main": "index.js",
+  "main": "lib/index.js",
   "directories": {
     "test": "tests"
   },
   "scripts": {
     "test": "jest",
     "build": "rimraf ./lib && tsc",
-    "prepare": "npm build"
+    "prepare": "npm run build"
   },
   "repository": {
     "type": "git",
