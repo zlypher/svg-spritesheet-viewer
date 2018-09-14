@@ -1,19 +1,16 @@
 import * as React from "react";
+import { SvgSymbol } from "./svg-symbol";
 
 interface ISpritesheetViewerProps {
-
+    symbols: any[];
 }
 
-interface ISpritesheetViewerState {
+export const SpritesheetViewer: React.SFC<ISpritesheetViewerProps> = (props) => {
+    const { symbols } = props;
 
-}
-
-export class SpritesheetViewer extends React.Component<ISpritesheetViewerProps, ISpritesheetViewerState> {
-    constructor(props: ISpritesheetViewerProps) {
-        super(props);
-    }
-
-    public render() {
-        return <h1>Hello World</h1>;
-    }
-}
+    return (
+        <section>
+            {symbols && symbols.map((sym) => <SvgSymbol key={sym.id} id={sym.id} />)}
+        </section>
+    );
+};

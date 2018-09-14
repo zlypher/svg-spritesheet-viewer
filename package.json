@@ -3,13 +3,9 @@
   "version": "1.0.0",
   "description": "SVG Spritesheet Viewer Component for React",
   "main": "lib/index.js",
-  "directories": {
-    "test": "tests"
-  },
   "scripts": {
     "test": "jest",
-    "build": "rimraf ./lib && tsc",
-    "prepare": "npm run build"
+    "build": "rimraf ./lib && tsc"
   },
   "repository": {
     "type": "git",
@@ -22,19 +18,19 @@
   },
   "homepage": "https://github.com/zlypher/svg-spritesheet-viewer#readme",
   "dependencies": {
-    "react": "^16.5.1"
+    "react": "16.5.1"
   },
   "devDependencies": {
-    "@types/jest": "^23.3.2",
-    "@types/react": "^16.4.14",
-    "@types/react-test-renderer": "^16.0.2",
-    "babel-jest": "^23.6.0",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1",
-    "jest": "^23.6.0",
-    "react-test-renderer": "^16.5.1",
-    "rimraf": "^2.6.2",
-    "ts-jest": "^23.1.4",
-    "typescript": "^3.0.3"
+    "@types/jest": "23.3.2",
+    "@types/react": "16.4.14",
+    "@types/react-test-renderer": "16.0.2",
+    "babel-jest": "23.6.0",
+    "babel-preset-env": "1.7.0",
+    "babel-preset-react": "6.24.1",
+    "jest": "23.6.0",
+    "react-test-renderer": "16.5.1",
+    "rimraf": "2.6.2",
+    "ts-jest": "23.1.4",
+    "typescript": "3.0.3"
   }
 }

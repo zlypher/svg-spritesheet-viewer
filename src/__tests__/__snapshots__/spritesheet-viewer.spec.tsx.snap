@@ -1,7 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`SpritesheetViewer renders correctly and matches the snapshot 1`] = `
-<h1>
-  Hello World
-</h1>
+<section>
+  <div>
+    <svg>
+      <use
+        xlinkHref="#test-one"
+      />
+    </svg>
+    <span>
+      test-one
+    </span>
+  </div>
+</section>
 `;

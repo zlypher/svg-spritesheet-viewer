@@ -8,8 +8,13 @@ describe("SpritesheetViewer", () => {
     });
 
     it("renders correctly and matches the snapshot", () => {
+        const symbols = [
+            {
+                id: "test-one",
+            }
+        ];
         const component = renderer.create(
-            <SpritesheetViewer />
+            <SpritesheetViewer symbols={symbols} />
         );
         let tree = component.toJSON();
         expect(tree).toMatchSnapshot();

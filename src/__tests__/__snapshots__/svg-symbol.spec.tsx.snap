@@ -2,6 +2,13 @@
 
 exports[`SvgSymbol renders correctly and matches the snapshot 1`] = `
 <div>
-  Symbol
+  <svg>
+    <use
+      xlinkHref="#test-one"
+    />
+  </svg>
+  <span>
+    test-one
+  </span>
 </div>
 `;
