@@ -1,6 +1,6 @@
 import * as React from "react";
-import { SpritesheetViewer } from "../index";
 import renderer from "react-test-renderer";
+import { SpritesheetViewer } from "../index";
 
 describe("SpritesheetViewer", () => {
     it("executes a test", () => {
@@ -11,12 +11,12 @@ describe("SpritesheetViewer", () => {
         const symbols = [
             {
                 id: "test-one",
-            }
+            },
         ];
         const component = renderer.create(
-            <SpritesheetViewer symbols={symbols} />
+            <SpritesheetViewer symbols={symbols} />,
         );
-        let tree = component.toJSON();
+        const tree = component.toJSON();
         expect(tree).toMatchSnapshot();
     });
 });

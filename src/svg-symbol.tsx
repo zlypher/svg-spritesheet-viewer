@@ -12,5 +12,5 @@ export const SvgSymbol: React.SFC<ISvgSymbolProps> = (props) => {
             <svg><use xlinkHref={`#${id}`} /></svg>
             <span>{id}</span>
         </div>
-    )
+    );
 };

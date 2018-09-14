@@ -1,13 +1,13 @@
 import * as React from "react";
-import { SvgSymbol } from "../index";
 import renderer from "react-test-renderer";
+import { SvgSymbol } from "../index";
 
 describe("SvgSymbol", () => {
     it("renders correctly and matches the snapshot", () => {
         const component = renderer.create(
-            <SvgSymbol id="test-one" />
+            <SvgSymbol id="test-one" />,
         );
-        let tree = component.toJSON();
+        const tree = component.toJSON();
         expect(tree).toMatchSnapshot();
     });
 });
