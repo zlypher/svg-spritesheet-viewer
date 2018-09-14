@@ -1,15 +1,18 @@
 {
   "name": "svg-spritesheet-viewer",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "SVG Spritesheet Viewer Component for React",
   "main": "lib/index.js",
   "scripts": {
+    "commit": "git-cz",
     "test": "jest",
-    "build": "rimraf ./lib && tsc"
+    "build": "rimraf ./lib && tsc",
+    "travis-deploy-once": "travis-deploy-once",
+    "semantic-release": "semantic-release"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zlypher/svg-spritesheet-viewer.git"
+    "url": "https://github.com/zlypher/svg-spritesheet-viewer.git"
   },
   "author": "Thomas Prochazka <thomas.prochazka@gmail.com>",
   "license": "MIT",
@@ -27,10 +30,19 @@
     "babel-jest": "23.6.0",
     "babel-preset-env": "1.7.0",
     "babel-preset-react": "6.24.1",
+    "commitizen": "2.10.1",
+    "cz-conventional-changelog": "2.1.0",
     "jest": "23.6.0",
     "react-test-renderer": "16.5.1",
     "rimraf": "2.6.2",
+    "semantic-release": "15.9.15",
+    "travis-deploy-once": "5.0.7",
     "ts-jest": "23.1.4",
     "typescript": "3.0.3"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
   }
 }
