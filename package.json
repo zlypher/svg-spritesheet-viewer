@@ -25,6 +25,10 @@
   "dependencies": {
     "react": "16.5.1"
   },
+  "files": [
+    "lib",
+    "README.md"
+  ],
   "devDependencies": {
     "@types/jest": "23.3.2",
     "@types/react": "16.4.14",
