@@ -10,7 +10,7 @@ export const SpritesheetViewer: React.SFC<ISpritesheetViewerProps> = (props) => 
 
     return (
         <section>
-            {symbols && symbols.map((sym) => <SvgSymbol id={sym.id} />)}
+            {symbols && symbols.map((sym) => <SvgSymbol key={sym.id} id={sym.id} />)}
         </section>
     );
 };
