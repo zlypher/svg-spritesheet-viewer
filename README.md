@@ -1,5 +1,7 @@
-# svg-spritesheet-viewer
+# [Archived] svg-spritesheet-viewer
 SVG Spritesheet Viewer Component for React
+
+ **⚠️ ATTENTION**: This project has been archived!
 
 [![travis build](https://img.shields.io/travis/zlypher/svg-spritesheet-viewer.svg?style=flat-square)](https://travis-ci.org/zlypher/svg-spritesheet-viewer)
 [![codecov coverage](https://img.shields.io/codecov/c/github/zlypher/svg-spritesheet-viewer.svg?style=flat-square)](https://codecov.io/github/zlypher/svg-spritesheet-viewer)
